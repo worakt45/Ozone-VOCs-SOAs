@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ความจริงเรื่องโอโซน: VOCs และ SOAs</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* ใช้ฟอนต์ Inter (หรือฟอนต์ sans-serif ที่ระบบมี) */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 leading-relaxed">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-800 mb-2">ความจริงเรื่องโอโซน: ทำไมถึงเกิด "ควันขาว"?</h1>
+            <p class="text-lg text-gray-600">ไขข้อสงสัยปฏิกิริยาระหว่าง VOCs และ SOAs</p>
+        </header>
+
+        <!-- Section 1: What are VOCs? -->
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">1. VOCs คืออะไร? (สารตั้งต้น)</h2>
+            <div class="flex flex-col md:flex-row items-center gap-4">
+                <div class="flex-shrink-0 w-32 h-32">
+                    <!-- SVG for VOCs -->
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20,90 H80 V60 H20 V90 Z" fill="#8B4513" stroke="#5D2E1F" stroke-width="1"/>
+                        <rect x="25" y="65" width="10" height="10" fill="#A0522D"/>
+                        <rect x="65" y="65" width="10" height="10" fill="#A0522D"/>
+                        <text x="50" y="80" text-anchor="middle" font-size="6" fill="white">SOFA</text>
+                        <path d="M70,90 V50 H90 V90 H70 Z" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+                        <rect x="75" y="55" width="10" height="5" fill="#8B4513"/>
+                        
+                        <style>.voc-dot { animation: float 6s ease-in-out infinite; } @keyframes float { 0% { transform: translateY(0px); opacity: 0.7; } 50% { transform: translateY(-15px); opacity: 0.3; } 100% { transform: translateY(0px); opacity: 0.7; } }</style>
+                        <text x="50" y="20" text-anchor="middle" font-size="8" fill="#007bff">VOCs (ก๊าซ)</text>
+                        <text x="50" y="30" text-anchor="middle" font-size="6" fill="#555">(มองไม่เห็น)</text>
+                        <circle class="voc-dot" cx="40" cy="50" r="1.5" fill="#007bff" style="animation-delay: -1s;"/>
+                        <circle class="voc-dot" cx="80" cy="45" r="1" fill="#007bff" style="animation-delay: -3s;"/>
+                        <circle class="voc-dot" cx="40" cy="40" r="1.5" fill="#007bff" style="animation-delay: -5s;"/>
+                        <circle class="voc-dot" cx="75" cy="35" r="1" fill="#007bff" style="animation-delay: -2s;"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="mb-3"><strong class="text-blue-600">VOCs (Volatile Organic Compounds)</strong> หรือ "สารอินทรีย์ระเหยง่าย" คือกลุ่มสารเคมีที่ระเหยกลายเป็นก๊าซได้ง่ายในอุณหภูมิห้อง</p>
+                    <p class="mb-3">ในสภาวะปกติ เรา <strong class="text-red-600">มองไม่เห็น</strong> VOCs แต่เรามักจะได้ "กลิ่น" ของมัน</p>
+                    <ul class="list-disc list-inside bg-blue-50 p-3 rounded-md">
+                        <li><strong>สถานะ:</strong> ก๊าซ (มองไม่เห็น)</li>
+                        <li><strong>ที่มา:</strong> ถูกปล่อย "โดยตรง" จากสิ่งของ</li>
+                        <li><strong>ตัวอย่าง:</strong> กลิ่นสีทาบ้าน, กลิ่นเฟอร์นิเจอร์ใหม่ (ฟอร์มาลดีไฮด์), สเปรย์ปรับอากาศ, น้ำหอม, ควันบุหรี่</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: What are SOAs? -->
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">2. SOAs คืออะไร? (ผลลัพธ์)</h2>
+            <div class="flex flex-col md:flex-row items-center gap-4">
+                <div class="flex-shrink-0 w-32 h-32">
+                    <!-- SVG for SOAs -->
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50" y="20" text-anchor="middle" font-size="8" fill="#28a745">SOAs (อนุภาค)</text>
+                        <text x="50" y="30" text-anchor="middle" font-size="6" fill="#555">(ควัน/หมอกที่มองเห็น)</text>
+                        <path d="M 30 60 C 20 60, 20 80, 30 80 C 30 90, 40 90, 40 80 C 50 80, 50 90, 60 90 C 70 90, 70 80, 60 80 C 70 80, 70 60, 60 60 C 60 50, 50 50, 50 60 C 40 60, 40 50, 30 50 C 20 50, 20 60, 30 60 Z" fill="#28a745" opacity="0.1"/>
+                        <circle cx="40" cy="65" r="2" fill="#28a745" opacity="0.8"/>
+                        <circle cx="42" cy="63" r="1.5" fill="#28a745" opacity="0.8"/>
+                        <circle cx="38" cy="67" r="2" fill="#28a745" opacity="0.8"/>
+                        <circle cx="50" cy="75" r="1.5" fill="#28a745" opacity="0.8"/>
+                        <circle cx="52" cy="73" r="2" fill="#28a745" opacity="0.8"/>
+                        <circle cx="48" cy="77" r="2" fill="#28a745" opacity="0.8"/>
+                        <circle cx="60" cy="60" r="2" fill="#28a745" opacity="0.8"/>
+                        <circle cx="63" cy="63" r="1.5" fill="#28a745" opacity="0.8"/>
+                        <circle cx="58" cy="61" r="2" fill="#28a745" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="mb-3"><strong class="text-green-600">SOAs (Secondary Organic Aerosols)</strong> หรือ "ละอองลอยอินทรีย์ทุติยภูมิ" คือ อนุภาคของแข็งหรือของเหลวขนาดเล็กมาก ที่ "เกิดขึ้นใหม่" ในอากาศ</p>
+                    <p class="mb-3">คำว่า "ทุติยภูมิ" (Secondary) หมายความว่ามันไม่ได้ถูกปล่อยมาตรงๆ แต่เกิดจาก <strong class="text-red-600">ปฏิกิริยาเคมี</strong> ของก๊าซอื่นในอากาศ</p>
+                    <ul class="list-disc list-inside bg-green-50 p-3 rounded-md">
+                        <li><strong>สถานะ:</strong> อนุภาคของแข็ง/ของเหลว (มองเห็นเป็นควัน, หมอก)</li>
+                        <li><strong>ที่มา:</strong> "เกิดขึ้นทีหลัง" จากปฏิกิริยาเคมี</li>
+                        <li><strong>นี่คือ "ควันสีขาว" ที่เราเห็นนั่นเอง</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Reaction -->
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-semibold text-red-700 mb-4">3. ปฏิกิริยา "สร้างควัน" เกิดขึ้นได้อย่างไร?</h2>
+            <p class="text-center mb-4">เมื่อโอโซน ($O_3$) ซึ่งเป็นก๊าซออกซิไดซ์ที่รุนแรง ถูกปล่อยเข้ามาในห้องที่มี VOCs สูง...</p>
+            
+            <!-- Reaction Diagram -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-center p-4">
+                <!-- Step 1: VOCs -->
+                <div class="flex flex-col items-center w-full md:w-1/3 p-2">
+                    <span class="text-lg font-semibold text-blue-700">VOCs (ก๊าซ)</span>
+                    <span class="text-sm text-gray-500 mb-2">(เชื้อเพลิง / มองไม่เห็น)</span>
+                    <svg viewBox="0 0 50 50" class="w-20 h-20">
+                        <circle class="voc-dot" cx="20" cy="20" r="1.5" fill="#007bff" style="animation-delay: -1s;"/>
+                        <circle class="voc-dot" cx="30" cy="25" r="1" fill="#007bff" style="animation-delay: -3s;"/>
+                        <circle class="voc-dot" cx="25" cy="30" r="1.5" fill="#007bff" style="animation-delay: -5s;"/>
+                    </svg>
+                </div>
+                
+                <!-- Plus + Trigger -->
+                <div class="flex flex-col items-center w-full md:w-1/3 p-2">
+                    <span class="text-4xl font-bold text-gray-700">+</span>
+                    <span class="text-lg font-semibold text-red-600 mt-2">Ozone ($O_3$)</span>
+                    <span class="text-sm text-gray-500">(ตัวเร่งปฏิกิริยา)</span>
+                </div>
+
+                <!-- Step 2: SOAs -->
+                <div class="flex flex-col items-center w-full md:w-1/3 p-2 mt-4 md:mt-0">
+                    <span class="text-lg font-semibold text-green-700">SOAs (อนุภาค)</span>
+                    <span class="text-sm text-gray-500 mb-2">(ผลลัพธ์ / ควันที่มองเห็น)</span>
+                    <svg viewBox="0 0 50 50" class="w-20 h-20">
+                        <path d="M 15 30 C 10 30, 10 40, 15 40 C 15 45, 20 45, 20 40 C 25 40, 25 45, 30 45 C 35 45, 35 40, 30 40 C 35 40, 35 30, 30 30 C 30 25, 25 25, 25 30 C 20 30, 20 25, 15 25 C 10 25, 10 30, 15 30 Z" fill="#28a745" opacity="0.3"/>
+                        <circle cx="20" cy="32" r="1.5" fill="#28a745" opacity="0.9"/>
+                        <circle cx="25" cy="38" r="1" fill="#28a745" opacity="0.9"/>
+                        <circle cx="30" cy="31" r="1.5" fill="#28a745" opacity="0.9"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-md">
+                <p>โอโซน ($O_3$) จะเข้าไป "โจมตี" หรือ "ออกซิไดซ์" ก๊าซ VOCs ที่ลอยอยู่ บังคับให้โมเลกุลของ VOCs ที่มองไม่เห็นเหล่านั้น เปลี่ยนโครงสร้างและจับตัวกันเป็น <strong>"อนุภาค"</strong> ที่หนักและใหญ่ขึ้น</p>
+                <p class="mt-2">เมื่ออนุภาค (SOAs) เหล่านี้เกิดขึ้นพร้อมกันจำนวนมหาศาล มันก็กลายเป็น "ควันสีขาว" ที่เรามองเห็นได้</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Scenarios -->
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">4. ทำไมบางครั้งมีควัน บางครั้งไม่มี?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- No Smoke -->
+                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">กรณีที่ 1: ไม่มีควัน (ห้องสะอาด)</h3>
+                    <p>ในห้องที่มีอากาศสะอาด มีปริมาณ "เชื้อเพลิง" (VOCs) น้อยมาก</p>
+                    <p class="mt-2">แม้โอโซนจะทำปฏิกิริยา แต่ปริมาณ SOAs ที่เกิดขึ้นก็น้อยเกินไปจน <strong>มองไม่เห็นด้วยตาเปล่า</strong></p>
+                </div>
+                <!-- Smoke -->
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-300">
+                    <h3 class="text-xl font-semibold text-yellow-800 mb-2">กรณีที่ 2: เกิดควันขาว (ห้องมีมลพิษ)</h3>
+                    <p>ในห้องที่มี "เชื้อเพลิง" (VOCs) หนาแน่น เช่น จากสเปรย์ปรับอากาศ, กลิ่นสี, หรือควันบุหรี่สะสม</p>
+                    <p class="mt-2">โอโซนจะทำปฏิกิริยารุนแรงและรวดเร็ว สร้าง SOAs (ควัน) ออกมาในปริมาณมหาศาลจน <strong>มองเห็นได้ชัดเจน</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Warning -->
+        <section class="bg-red-100 border-l-4 border-red-500 text-red-800 p-6 rounded-lg shadow-lg mb-6" role="alert">
+            <h2 class="text-2xl font-semibold mb-3">⚠️ คำเตือนสำคัญ</h2>
+            <p>"ควันสีขาว" (SOAs) ที่เกิดขึ้น <strong>ไม่ใชสัญญาณที่ดี</strong></p>
+            <p class="mt-2">มันคือ <strong>ฝุ่นละอองขนาดเล็ก (PM2.5) ที่เพิ่งถูกสร้างขึ้นใหม่</strong> ซึ่งเป็นอันตรายอย่างยิ่งต่อปอดและระบบทางเดินหายใจเมื่อสูดดมเข้าไป</p>
+            <p class="mt-3 font-bold">ห้ามเข้าไปในห้องขณะเกิดควัน และต้องระบายอากาศให้หมดจด (นานกว่าปกติ) หลังจากใช้งานโอโซน ก่อนกลับเข้าไปใช้ห้องเสมอ!</p>
+        </section>
+        
+        <!-- Section 6: References -->
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">แหล่งอ้างอิง (References)</h2>
+            <ul class="list-disc list-inside text-blue-600">
+                <li>
+                    <a href="https://www.epa.gov/indoor-air-quality-iaq/ozone-generators-are-sold-air-cleaners" target="_blank" rel="noopener noreferrer" class="hover:underline">U.S. Environmental Protection Agency (EPA) - Ozone Generators</a>
+                </li>
+                <li>
+                    <a href="https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality" target="_blank" rel="noopener noreferrer" class="hover:underline">U.S. EPA - Volatile Organic Compounds (VOCs)</a>
+                </li>
+                <li>
+                    <a href="https://www.health.ny.gov/environmental/indoors/air/ozone_generating.htm" target="_blank" rel="noopener noreferrer" class="hover:underline">New York State Department of Health - Ozone Generators</a>
+                </li>
+                 <li>
+                    <p class="text-gray-600 mt-2">Weschler, C. J. (2000). Ozone in indoor environments: concentration and chemistry. Indoor Air, 10(4), 269-288.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-8 text-gray-500">
+            <p>Credit by: nothng9</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
